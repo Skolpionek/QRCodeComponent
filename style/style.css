@@ -1,1 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");/*# sourceMappingURL=style.css.map */
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212deg, 45%, 89%);
+  font-family: "Changa", sans-serif;
+}
+body #container {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 15px 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 10px;
+  gap: 20px;
+}
+body #container img {
+  width: 300px;
+  border-radius: 10px;
+}
+body #container h2 {
+  color: hsl(218deg, 44%, 22%);
+  padding: 0 26px;
+  line-height: 120%;
+  font-size: 20px;
+  text-align: justify;
+}
+body #container p {
+  text-align: center;
+  color: hsl(220deg, 15%, 55%);
+  padding: 0 20px;
+}
+body footer {
+  position: absolute;
+  bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

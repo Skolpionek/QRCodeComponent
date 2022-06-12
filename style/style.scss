@@ -1,3 +1,4 @@
+@import './reset';
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
 $White: hsl(0, 0%, 100%);
 $LightGray: hsl(212, 45%, 89%);
@@ -9,3 +10,40 @@ $Wide:700;
 $Slim:400;
 $font:'Changa', sans-serif;
 
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: $LightGray;
+   font-family: $font;
+   #container{
+      background-color: $White;
+      padding: 15px 15px 30px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: min-content;
+      border-radius: 10px;
+      gap: 20px;
+      img{
+         width: 300px;
+         border-radius: 10px;
+      }
+      h2{
+         color: $DarkBlue;
+         padding: 0 26px;
+         line-height: 120%;
+         font-size: 20px;
+         text-align: justify;
+      }
+      p{
+         text-align: center;
+         color: $GrayishBlue;
+         padding: 0 20px;
+      }
+   }
+   footer{
+      position: absolute;
+      bottom: 10px;
+   }
+}
